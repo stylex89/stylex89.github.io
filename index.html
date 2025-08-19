@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Philipp Kirr – Professionelles Profil</title>
+  <meta name="description" content="Philipp Kirr – IT, Teamleitung, Servicetechnik, Prozessoptimierung & Sprachen. Erfahrung, Skills & Kontakt." />
+  <meta property="og:title" content="Philipp Kirr – Profil & Kontakt" />
+  <meta property="og:description" content="Professionelles Profil von Philipp Kirr: IT, Teamleitung, Servicetechnik, Prozessoptimierung & Sprachen." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="DSC_1961x.jpg" />
+  <meta name="theme-color" content="#0ea5e9" />
+  <style>
+    :root{
+      --bg:#0a0f1c; --panel:#111827; --muted:#94a3b8; --text:#f1f5f9;
+      --accent:#0ea5e9; --accent-2:#38bdf8; --chip:#1e293b; --ring: rgba(14,165,233,.35);
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;height:100%;background:linear-gradient(160deg,#0f172a,#1e293b 70%);
+               color:var(--text);font:500 16px/1.6 'Inter',system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Arial,sans-serif}
+    a{color:var(--accent);text-decoration:none}
+    .container{max-width:980px;margin:0 auto;padding:24px}
+    header{display:flex;flex-wrap:wrap;gap:24px;align-items:center;margin:32px 0 40px;position:relative}
+    .langswitch{position:absolute;right:0;top:-6px;display:flex;gap:8px}
+    .langswitch button{background:transparent;border:1px solid #1e293b;color:var(--text);padding:6px 10px;border-radius:999px;cursor:pointer;font-weight:600}
+    .langswitch button.active{background:linear-gradient(135deg,var(--accent),var(--accent-2));color:#06121f}
+    .avatar{flex-shrink:0;width:120px;height:120px;border-radius:20px;background:#111 center/cover no-repeat url('DSC_1961x.jpg');
+            box-shadow:0 0 0 6px rgba(14,165,233,.15), 0 12px 40px -8px rgba(14,165,233,.45)}
+    .title h1{margin:0;font-size:clamp(30px,5vw,44px);font-weight:700}
+    .title p{margin:6px 0 0;color:var(--muted);font-size:18px}
+    .chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+    .chip{background:var(--chip);color:#cbd5e1;padding:6px 12px;border-radius:999px;font-size:14px}
+    .cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:18px}
+    .btn{border:none;border-radius:10px;padding:12px 18px;font-weight:600;cursor:pointer;transition:all .2s ease}
+    .btn-primary{background:linear-gradient(135deg,var(--accent),var(--accent-2));color:#06121f;box-shadow:0 8px 28px -10px var(--ring)}
+    .btn-primary:hover{transform:translateY(-2px)}
+    .btn-ghost{background:transparent;border:1px solid #1e293b;color:var(--text)}
+
+    section{background:rgba(255,255,255,.02);border:1px solid rgba(148,163,184,.1);
+            border-radius:16px;padding:22px;margin:20px 0}
+    section h2{margin:0 0 10px;font-size:22px}
+    ul{margin:12px 0 0;padding-left:20px}
+    .grid{display:grid;gap:18px}
+    @media(min-width:820px){.grid{grid-template-columns:1.1fr 0.9fr}}
+    .card{border-radius:16px;padding:16px}
+    .list>li{margin-bottom:10px}
+    footer{color:var(--muted);text-align:center;margin:36px 0}
+    .small{font-size:14px;color:var(--muted)}
+    .lang{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+    .hidden{display:none}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="langswitch" aria-label="Language switch">
+        <button id="btnDE" class="active" aria-pressed="true">DE</button>
+        <button id="btnEN" aria-pressed="false">EN</button>
+      </div>
+      <div class="avatar" aria-label="Profilfoto von Philipp Kirr"></div>
+      <div class="title">
+        <h1>Philipp Kirr</h1>
+        <p data-de="IT · Teamleitung · Servicetechnik · Prozess- & Sprachspezialist"
+           data-en="IT · Team Lead · Service Technician · Process & Language Specialist">
+          IT · Teamleitung · Servicetechnik · Prozess- & Sprachspezialist
+        </p>
+        <div class="chips" aria-label="Schwerpunkte">
+          <span class="chip" data-de="Düsseldorf · Krefeld · Mönchengladbach" data-en="Düsseldorf · Krefeld · Mönchengladbach">Düsseldorf · Krefeld · Mönchengladbach</span>
+          <span class="chip" data-de="8+ Jahre Food & Beverage" data-en="8+ years Food & Beverage">8+ Jahre Food & Beverage</span>
+          <span class="chip" data-de="IT · Prozesse · Servicetechnik" data-en="IT · Processes · Service Engineering">IT · Prozesse · Servicetechnik</span>
+          <span class="chip" data-de="Mehrsprachig (DE/EN/RO/ES/PT/IT)" data-en="Multilingual (DE/EN/RO/ES/PT/IT)">Mehrsprachig (DE/EN/RO/ES/PT/IT)</span>
+        </div>
+        <div class="cta">
+          <a class="btn btn-primary" href="mailto:philipp.kirr@gmail.com" data-de="Kontakt per E‑Mail" data-en="Contact via Email">Kontakt per E‑Mail</a>
+          <a class="btn btn-ghost" href="https://www.linkedin.com/in/philipp-kirr-579274163" target="_blank" rel="noopener" data-de="LinkedIn Profil" data-en="LinkedIn Profile">LinkedIn Profil</a>
+          <a class="btn btn-ghost" href="cv/Philipp_Kirr_CV.pdf" target="_blank" rel="noopener" data-de="Lebenslauf (PDF)" data-en="Resume (PDF)">Lebenslauf (PDF)</a>
+        </div>
+      </div>
+    </header>
+
+    <div class="grid">
+      <section class="card" aria-labelledby="about">
+        <h2 id="about" data-de="Über mich" data-en="About me">Über mich</h2>
+        <p id="aboutText" data-de="Ich habe über acht Jahre Erfahrung in der Lebensmittel‑ und Getränkeindustrie mit Schwerpunkt auf Produktion, Qualitätssicherung, Prozessoptimierung und Teamführung. Technik, IT‑Service und Sprachen sind meine Stärke. Ich bin offen für Kooperationen, Festanstellung oder Projekte im Großraum Düsseldorf."
+           data-en="I have over eight years of experience in the food & beverage industry focusing on production, quality assurance, process optimisation and team leadership. Technology, IT support and languages are my strengths. I am open to collaborations, full‑time roles or projects in the greater Düsseldorf area.">
+          Ich habe über acht Jahre Erfahrung in der Lebensmittel‑ und Getränkeindustrie mit Schwerpunkt auf Produktion, Qualitätssicherung, Prozessoptimierung und Teamführung. Technik, IT‑Service und Sprachen sind meine Stärke. Ich bin offen für Kooperationen, Festanstellung oder Projekte im Großraum Düsseldorf.
+        </p>
+        <div class="lang" aria-label="Sprachen">
+          <span class="chip" data-de="Deutsch (C2)" data-en="German (C2)">Deutsch (C2)</span>
+          <span class="chip" data-de="Englisch (C1)" data-en="English (C1)">Englisch (C1)</span>
+          <span class="chip" data-de="Rumänisch" data-en="Romanian">Rumänisch</span>
+          <span class="chip" data-de="Spanisch" data-en="Spanish">Spanisch</span>
+          <span class="chip" data-de="Portugiesisch" data-en="Portuguese">Portugiesisch</span>
+          <span class="chip" data-de="Italienisch (Grundlagen)" data-en="Italian (basic)">Italienisch (Grundlagen)</span>
+        </div>
+      </section>
+
+      <section class="card" aria-labelledby="value">
+        <h2 id="value" data-de="Leistungen & Mehrwert" data-en="Services & Value">Leistungen & Mehrwert</h2>
+        <ul class="list" id="valueList">
+          <li data-de="<strong>IT & Support:</strong> Einrichtung, Fehleranalyse, kleinere Netzwerke, Hardware/Software‑Service."
+              data-en="<strong>IT & Support:</strong> Setup, troubleshooting, small networks, hardware/software service."><strong>IT & Support:</strong> Einrichtung, Fehleranalyse, kleinere Netzwerke, Hardware/Software‑Service.</li>
+          <li data-de="<strong>Prozess & OEE:</strong> Linienanalysen, Störungsreduktion, Standard‑Work, Schulungen."
+              data-en="<strong>Process & OEE:</strong> line analysis, downtime reduction, standard work, training."><strong>Prozess & OEE:</strong> Linienanalysen, Störungsreduktion, Standard‑Work, Schulungen.</li>
+          <li data-de="<strong>Servicetechnik:</strong> Technische Betreuung von F&B‑Anlagen, Wartung & Troubleshooting."
+              data-en="<strong>Service Engineering:</strong> maintenance & troubleshooting for F&B equipment."><strong>Servicetechnik:</strong> Technische Betreuung von F&B‑Anlagen, Wartung & Troubleshooting.</li>
+          <li data-de="<strong>Sprachen & Training:</strong> Mehrsprachige Kommunikation (DE/EN/RO/ES/PT/IT), Dokumentation & Schulungen."
+              data-en="<strong>Languages & Training:</strong> multilingual communication (DE/EN/RO/ES/PT/IT), documentation & training."><strong>Sprachen & Training:</strong> Mehrsprachige Kommunikation (DE/EN/RO/ES/PT/IT), Dokumentation & Schulungen.</li>
+        </ul>
+      </section>
+
+      <section class="card" aria-labelledby="skills">
+        <h2 id="skills" data-de="Skills" data-en="Skills">Skills</h2>
+        <ul class="list" id="skillsList">
+          <li data-de="IT‑Support, Hardware/Software‑Troubleshooting, Netzwerke (Grundlagen)" data-en="IT support, hardware/software troubleshooting, basic networking">IT‑Support, Hardware/Software‑Troubleshooting, Netzwerke (Grundlagen)</li>
+          <li data-de="Prozessanalyse, OEE/Lean‑Denkweise, Qualitätssicherung" data-en="Process analysis, OEE/Lean mindset, quality assurance">Prozessanalyse, OEE/Lean‑Denkweise, Qualitätssicherung</li>
+          <li data-de="Teamleitung, Schulung, Schichtkoordination" data-en="Team leadership, training, shift coordination">Teamleitung, Schulung, Schichtkoordination</li>
+          <li data-de="Technische Instandhaltung, Servicetechnik (F&B‑Anlagen)" data-en="Technical maintenance, service engineering (F&B equipment)">Technische Instandhaltung, Servicetechnik (F&B‑Anlagen)</li>
+          <li data-de="Mehrsprachige Kommunikation & Dokumentation" data-en="Multilingual communication & documentation">Mehrsprachige Kommunikation & Dokumentation</li>
+        </ul>
+      </section>
+
+      <section class="card" aria-labelledby="experience">
+        <h2 id="experience" data-de="Erfahrung" data-en="Experience">Erfahrung</h2>
+        <ul class="list" id="expList">
+          <li data-de="<strong>Coca‑Cola Europacific Partners</strong> – Produktion & Prozesse (OEE, Linienbetreuung, Troubleshooting)"
+              data-en="<strong>Coca‑Cola Europacific Partners</strong> – production & processes (OEE, line support, troubleshooting)"><strong>Coca‑Cola Europacific Partners</strong> – Produktion & Prozesse (OEE, Linienbetreuung, Troubleshooting)</li>
+          <li data-de="<strong>Mars</strong> – Qualitätskontrolle & Maschinenbedienung (HACCP, SPC, Linienoptimierung)"
+              data-en="<strong>Mars</strong> – quality control & machine operation (HACCP, SPC, line optimisation)"><strong>Mars</strong> – Qualitätskontrolle & Maschinenbedienung (HACCP, SPC, Linienoptimierung)</li>
+          <li data-de="<strong>Intersnack</strong> – Lebensmittelproduktion (Prozessstabilität, Schichtkoordination)"
+              data-en="<strong>Intersnack</strong> – food production (process stability, shift coordination)"><strong>Intersnack</strong> – Lebensmittelproduktion (Prozessstabilität, Schichtkoordination)</li>
+        </ul>
+      </section>
+
+      <section class="card" aria-labelledby="contact">
+        <h2 id="contact" data-de="Kontakt" data-en="Contact">Kontakt</h2>
+        <p class="small" id="contactLead" data-de="Am besten per E‑Mail oder über LinkedIn. Für Unternehmen: Ich bin kurzfristig verfügbar und flexibel für Gespräche."
+           data-en="Best via email or LinkedIn. For companies: I am available at short notice and flexible for conversations.">Am besten per E‑Mail oder über LinkedIn. Für Unternehmen: Ich bin kurzfristig verfügbar und flexibel für Gespräche.</p>
+        <ul>
+          <li>E‑Mail: <a href="mailto:philipp.kirr@gmail.com">philipp.kirr@gmail.com</a></li>
+          <li>LinkedIn: <a href="https://www.linkedin.com/in/philipp-kirr-579274163" target="_blank" rel="noopener">linkedin.com/in/philipp-kirr-579274163</a></li>
+        </ul>
+      </section>
+    </div>
+
+    <footer>
+      <p class="small">© <span id="y"></span> Philipp Kirr · <span data-de="Professionelles Profil" data-en="Professional profile">Professionelles Profil</span> · Hosted via GitHub Pages</p>
+    </footer>
+  </div>
+  <script>
+    // year
+    document.getElementById('y').textContent=new Date().getFullYear();
+    // language toggle
+    const setLang=(lang)=>{
+      document.documentElement.lang=lang;
+      const isEN=lang==='en';
+      for(const el of document.querySelectorAll('[data-en]')){
+        el.innerHTML=isEN?el.getAttribute('data-en'):el.getAttribute('data-de');
+      }
+      document.getElementById('btnDE').classList.toggle('active',!isEN);
+      document.getElementById('btnEN').classList.toggle('active',isEN);
+      document.getElementById('btnDE').setAttribute('aria-pressed',(!isEN).toString());
+      document.getElementById('btnEN').setAttribute('aria-pressed',isEN.toString());
+      localStorage.setItem('pgLang',lang);
+    };
+    document.getElementById('btnDE').addEventListener('click',()=>setLang('de'));
+    document.getElementById('btnEN').addEventListener('click',()=>setLang('en'));
+    setLang(localStorage.getItem('pgLang')||'de');
+  </script>
+</body>
+</html>
+
