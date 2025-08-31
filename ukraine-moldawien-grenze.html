@@ -15,7 +15,10 @@
     h2{margin-top:2rem}
     em{color:#475569}
     #view-count-wrap{margin-top:2rem;font-weight:bold}
+    #cactus-comments{margin-top:1rem}
+    #cactus-comments *{font-family:inherit}
   </style>
+  <link rel="stylesheet" href="https://latest.cactus.chat/style.css" />
 </head>
 <body>
   <article>
@@ -46,15 +49,18 @@
   <div id="view-count-wrap">Besucherzähler: <span id="view-count">0</span></div>
   <section id="comments">
     <h2>Kommentare</h2>
-    <script src="https://utteranc.es/client.js"
-            repo="stylex89/stylex89.github.io"
-            issue-term="pathname"
-            label="comment"
-            theme="github-light"
-            crossorigin="anonymous"
-            async>
-    </script>
+    <div id="cactus-comments"></div>
   </section>
+  <script type="module">
+    import initComments from 'https://latest.cactus.chat/cactus.js';
+    initComments({
+      serverName: 'cactus.chat',
+      siteName: 'stylex89.github.io',
+      roomName: 'ukraine-moldawien-grenze',
+      defaultHomeserverUrl: 'https://matrix-client.matrix.org',
+      element: document.getElementById('cactus-comments')
+    });
+  </script>
   <script>
     fetch('https://api.countapi.xyz/hit/stylex89.github.io/grenzpost')
       .then(res => res.json())
