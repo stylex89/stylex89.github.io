@@ -43,7 +43,7 @@
     <p>Solche Erlebnisse zerstören Vertrauen. Und Vertrauen ist das Wertvollste, was die Ukraine gegenüber ihren internationalen Partnern hat.</p>
     <p>Wir schweigen nicht länger. Und wir hoffen, dass wir nicht die Einzigen sind.</p>
   </article>
-  <div id="view-count-wrap">Besucherzähler: <span id="view-count">0</span></div>
+    <div id="view-count-wrap">Besucherzähler: <span id="view-count">loading…</span></div>
   <section id="comments">
     <h2>Kommentare</h2>
     <script src="https://utteranc.es/client.js"
@@ -56,10 +56,24 @@
     </script>
   </section>
   <script>
-    fetch('https://api.countapi.xyz/hit/stylex89.github.io/grenzpost')
-      .then(res => res.json())
+    const viewCountEl = document.getElementById('view-count');
+    const storageKey = 'visited-ukraine-post';
+    const hasVisited = localStorage.getItem(storageKey);
+    const url = `https://api.countapi.xyz/${hasVisited ? 'get' : 'hit'}/stylex89.github.io/grenzpost`;
+
+    fetch(url)
       .then(res => {
-        document.getElementById('view-count').textContent = res.value;
+        if (!res.ok) throw new Error('Network response was not ok');
+        return res.json();
+      })
+      .then(data => {
+        viewCountEl.textContent = data.value;
+        if (!hasVisited) {
+          localStorage.setItem(storageKey, 'true');
+        }
+      })
+      .catch(() => {
+        viewCountEl.textContent = '–';
       });
   </script>
 </body>
