@@ -15,37 +15,44 @@
     h2{margin-top:2rem}
     em{color:#475569}
     #view-count-wrap{margin-top:2rem;font-weight:bold}
+    .langswitch{display:flex;gap:8px;margin-bottom:1rem}
+    .langswitch button{background:transparent;border:1px solid #1e293b;color:#1e293b;padding:6px 12px;border-radius:999px;cursor:pointer;font-weight:700}
+    .langswitch button.active{background:#1e293b;color:#fff}
   </style>
 </head>
 <body>
   <article>
-    <h1>Grenzerfahrung an der Ukraine-Moldawien-Grenze: Wenn Kontrolle zur Schikane wird</h1>
-    <p><em>Ein Reisebericht mit bitterem Beigeschmack</em></p>
-    <p>Jedes Jahr reisen wir mit dem Auto durch Südeuropa. Rumänien, Moldawien – stets freundlich, effizient und korrekt. Dieses Jahr verlief selbst die Einreise von Polen in die Ukraine sehr angenehm: freundliche Beamte, schnelle Abfertigung, keinerlei Probleme. Auch die Durchfahrt durch die Ukraine war sehr positiv – nette Menschen, hilfsbereit, offen.</p>
-    <p>Doch an der Grenze zur Republik Moldau erlebten wir eine zutiefst frustrierende Situation, die wir nicht länger still hinnehmen wollen.</p>
-    <h2>Die Kontrolle: von Pflicht zur Willkür</h2>
-    <p>Am Grenzübergang zur Ukraine, gegen Mitternacht, waren wir das einzige Fahrzeug. Die Kontrolle – durch einen jungen Beamten – begann mit scheinbar routinemäßigen Fragen. Doch schnell wurde klar: es ging nicht um Sicherheit, sondern um Macht und Schikane.</p>
-    <p>Warum wir drei Laptops dabeihaben. Wozu so viele persönliche Gegenstände. Warum wir Wasser, Pflegeprodukte und Hygieneartikel transportieren. Fragen, die weder rechtlich notwendig noch sachlich begründet waren. Unsere Erklärungen stießen auf Desinteresse. Stattdessen: ein spöttischer Ton, anhaltende Verzögerung, unterschwellige Witze gegenüber meiner Frau.</p>
-    <p>Erst als sie dem Beamten mitteilte, dass sie für eine internationale Anwaltskanzlei mit Schwerpunkt auf Steuer- und Betrugsbekämpfung arbeitet, änderte sich die Haltung schlagartig. Plötzlich war Eile geboten, Papiere wurden abgestempelt, wir durften fahren.</p>
-    <h2>Keine Einzelfälle, sondern ein Muster</h2>
-    <p>Dies war nicht unser erster Vorfall an der ukrainischen Grenze zur Republik Moldau. Was bleibt, ist das Gefühl, dass es dort weniger um Sicherheit als um Erpressung und Einschüchterung geht. In anderen Ländern wurden wir nie so behandelt. Die Ukraine jedoch scheint bestimmte Beamte an ihren Grenzen völlig ohne Aufsicht oder klare Regeln agieren zu lassen.</p>
-    <h2>Unsere Stimme als Unterstützer der Ukraine</h2>
-    <p>Wir unterstützen die Ukraine seit Jahren, auch indirekt über unsere deutschen Steuergelder. Milliardenhilfen fließen in den Wiederaufbau, in humanitäre Hilfe, in Waffen, in Infrastruktur. Und doch erleben wir als Bürger genau dieses Landes, das uns als Freund sieht, diese Form der Behandlung?</p>
-    <p>Wir sind keine Schmuggler. Wir sind keine Bedrohung. Wir sind Besucher mit Respekt und guten Absichten. Aber genau so werden wir an dieser Grenze nicht behandelt.</p>
-    <h2>Was wir fordern</h2>
+    <div class="langswitch" aria-label="Language switch">
+      <button id="btnDE" class="active" aria-pressed="true">DE</button>
+      <button id="btnEN" aria-pressed="false">EN</button>
+    </div>
+    <h1 data-de="Grenzerfahrung an der Ukraine-Moldawien-Grenze: Wenn Kontrolle zur Schikane wird" data-en="Border experience at the Ukraine–Moldova border: When control turns into harassment">Grenzerfahrung an der Ukraine-Moldawien-Grenze: Wenn Kontrolle zur Schikane wird</h1>
+    <p data-de="<em>Ein Reisebericht mit bitterem Beigeschmack</em>" data-en="<em>A travel report with a bitter aftertaste</em>"><em>Ein Reisebericht mit bitterem Beigeschmack</em></p>
+    <p data-de="Jedes Jahr reisen wir mit dem Auto durch Südeuropa. Rumänien, Moldawien – stets freundlich, effizient und korrekt. Dieses Jahr verlief selbst die Einreise von Polen in die Ukraine sehr angenehm: freundliche Beamte, schnelle Abfertigung, keinerlei Probleme. Auch die Durchfahrt durch die Ukraine war sehr positiv – nette Menschen, hilfsbereit, offen." data-en="Every year we travel by car through Southern Europe. Romania, Moldova—always friendly, efficient and correct. This year even the entry from Poland into Ukraine was very pleasant: friendly officers, fast processing, no problems. Travelling through Ukraine was also very positive—nice people, helpful, open.">Jedes Jahr reisen wir mit dem Auto durch Südeuropa. Rumänien, Moldawien – stets freundlich, effizient und korrekt. Dieses Jahr verlief selbst die Einreise von Polen in die Ukraine sehr angenehm: freundliche Beamte, schnelle Abfertigung, keinerlei Probleme. Auch die Durchfahrt durch die Ukraine war sehr positiv – nette Menschen, hilfsbereit, offen.</p>
+    <p data-de="Doch an der Grenze zur Republik Moldau erlebten wir eine zutiefst frustrierende Situation, die wir nicht länger still hinnehmen wollen." data-en="But at the border to the Republic of Moldova we experienced a deeply frustrating situation that we no longer want to silently accept.">Doch an der Grenze zur Republik Moldau erlebten wir eine zutiefst frustrierende Situation, die wir nicht länger still hinnehmen wollen.</p>
+    <h2 data-de="Die Kontrolle: von Pflicht zur Willkür" data-en="The check: from duty to arbitrariness">Die Kontrolle: von Pflicht zur Willkür</h2>
+    <p data-de="Am Grenzübergang zur Ukraine, gegen Mitternacht, waren wir das einzige Fahrzeug. Die Kontrolle – durch einen jungen Beamten – begann mit scheinbar routinemäßigen Fragen. Doch schnell wurde klar: es ging nicht um Sicherheit, sondern um Macht und Schikane." data-en="At the border crossing to Ukraine, around midnight, we were the only vehicle. The inspection—by a young officer—began with seemingly routine questions. But it soon became clear it wasn't about security but about power and harassment.">Am Grenzübergang zur Ukraine, gegen Mitternacht, waren wir das einzige Fahrzeug. Die Kontrolle – durch einen jungen Beamten – begann mit scheinbar routinemäßigen Fragen. Doch schnell wurde klar: es ging nicht um Sicherheit, sondern um Macht und Schikane.</p>
+    <p data-de="Warum wir drei Laptops dabeihaben. Wozu so viele persönliche Gegenstände. Warum wir Wasser, Pflegeprodukte und Hygieneartikel transportieren. Fragen, die weder rechtlich notwendig noch sachlich begründet waren. Unsere Erklärungen stießen auf Desinteresse. Stattdessen: ein spöttischer Ton, anhaltende Verzögerung, unterschwellige Witze gegenüber meiner Frau." data-en="Why we have three laptops. What for so many personal items. Why we're carrying water, toiletries and hygiene products. Questions that were neither legally required nor factually justified. Our explanations met with disinterest. Instead: a mocking tone, continued delay, subtle jokes at my wife's expense.">Warum wir drei Laptops dabeihaben. Wozu so viele persönliche Gegenstände. Warum wir Wasser, Pflegeprodukte und Hygieneartikel transportieren. Fragen, die weder rechtlich notwendig noch sachlich begründet waren. Unsere Erklärungen stießen auf Desinteresse. Stattdessen: ein spöttischer Ton, anhaltende Verzögerung, unterschwellige Witze gegenüber meiner Frau.</p>
+    <p data-de="Erst als sie dem Beamten mitteilte, dass sie für eine internationale Anwaltskanzlei mit Schwerpunkt auf Steuer- und Betrugsbekämpfung arbeitet, änderte sich die Haltung schlagartig. Plötzlich war Eile geboten, Papiere wurden abgestempelt, wir durften fahren." data-en="Only when she told the officer that she works for an international law firm specialising in tax and fraud enforcement did his attitude change abruptly. Suddenly there was urgency, papers were stamped, we were allowed to go.">Erst als sie dem Beamten mitteilte, dass sie für eine internationale Anwaltskanzlei mit Schwerpunkt auf Steuer- und Betrugsbekämpfung arbeitet, änderte sich die Haltung schlagartig. Plötzlich war Eile geboten, Papiere wurden abgestempelt, wir durften fahren.</p>
+    <h2 data-de="Keine Einzelfälle, sondern ein Muster" data-en="Not isolated incidents but a pattern">Keine Einzelfälle, sondern ein Muster</h2>
+    <p data-de="Dies war nicht unser erster Vorfall an der ukrainischen Grenze zur Republik Moldau. Was bleibt, ist das Gefühl, dass es dort weniger um Sicherheit als um Erpressung und Einschüchterung geht. In anderen Ländern wurden wir nie so behandelt. Die Ukraine jedoch scheint bestimmte Beamte an ihren Grenzen völlig ohne Aufsicht oder klare Regeln agieren zu lassen." data-en="This was not our first incident at the Ukrainian border with the Republic of Moldova. What remains is the feeling that it's less about security there than about extortion and intimidation. In other countries we were never treated like this. Ukraine, however, seems to allow certain officers at its borders to act without any oversight or clear rules.">Dies war nicht unser erster Vorfall an der ukrainischen Grenze zur Republik Moldau. Was bleibt, ist das Gefühl, dass es dort weniger um Sicherheit als um Erpressung und Einschüchterung geht. In anderen Ländern wurden wir nie so behandelt. Die Ukraine jedoch scheint bestimmte Beamte an ihren Grenzen völlig ohne Aufsicht oder klare Regeln agieren zu lassen.</p>
+    <h2 data-de="Unsere Stimme als Unterstützer der Ukraine" data-en="Our voice as supporters of Ukraine">Unsere Stimme als Unterstützer der Ukraine</h2>
+    <p data-de="Wir unterstützen die Ukraine seit Jahren, auch indirekt über unsere deutschen Steuergelder. Milliardenhilfen fließen in den Wiederaufbau, in humanitäre Hilfe, in Waffen, in Infrastruktur. Und doch erleben wir als Bürger genau dieses Landes, das uns als Freund sieht, diese Form der Behandlung?" data-en="We have supported Ukraine for years, also indirectly through our German tax money. Billions in aid flow into reconstruction, humanitarian assistance, weapons, infrastructure. And yet as citizens of the very country that sees us as a friend, we experience this kind of treatment?">Wir unterstützen die Ukraine seit Jahren, auch indirekt über unsere deutschen Steuergelder. Milliardenhilfen fließen in den Wiederaufbau, in humanitäre Hilfe, in Waffen, in Infrastruktur. Und doch erleben wir als Bürger genau dieses Landes, das uns als Freund sieht, diese Form der Behandlung?</p>
+    <p data-de="Wir sind keine Schmuggler. Wir sind keine Bedrohung. Wir sind Besucher mit Respekt und guten Absichten. Aber genau so werden wir an dieser Grenze nicht behandelt." data-en="We are not smugglers. We are not a threat. We are visitors with respect and good intentions. But that's not how we are treated at this border.">Wir sind keine Schmuggler. Wir sind keine Bedrohung. Wir sind Besucher mit Respekt und guten Absichten. Aber genau so werden wir an dieser Grenze nicht behandelt.</p>
+    <h2 data-de="Was wir fordern" data-en="What we demand">Was wir fordern</h2>
     <ul>
-      <li>Aufklärung und Kontrolle der Grenzbeamten</li>
-      <li>Schulung im Umgang mit internationalen Besuchern</li>
-      <li>Transparente Regeln, auf die sich Reisende berufen können</li>
-      <li>Möglichkeit zur Beschwerde in einer Form, die auch Wirkung zeigt</li>
+      <li data-de="Aufklärung und Kontrolle der Grenzbeamten" data-en="Investigation and oversight of border officers">Aufklärung und Kontrolle der Grenzbeamten</li>
+      <li data-de="Schulung im Umgang mit internationalen Besuchern" data-en="Training in dealing with international visitors">Schulung im Umgang mit internationalen Besuchern</li>
+      <li data-de="Transparente Regeln, auf die sich Reisende berufen können" data-en="Transparent rules that travellers can rely on">Transparente Regeln, auf die sich Reisende berufen können</li>
+      <li data-de="Möglichkeit zur Beschwerde in einer Form, die auch Wirkung zeigt" data-en="Option to complain in a way that actually has an effect">Möglichkeit zur Beschwerde in einer Form, die auch Wirkung zeigt</li>
     </ul>
-    <h2>Fazit</h2>
-    <p>Solche Erlebnisse zerstören Vertrauen. Und Vertrauen ist das Wertvollste, was die Ukraine gegenüber ihren internationalen Partnern hat.</p>
-    <p>Wir schweigen nicht länger. Und wir hoffen, dass wir nicht die Einzigen sind.</p>
+    <h2 data-de="Fazit" data-en="Conclusion">Fazit</h2>
+    <p data-de="Solche Erlebnisse zerstören Vertrauen. Und Vertrauen ist das Wertvollste, was die Ukraine gegenüber ihren internationalen Partnern hat." data-en="Such experiences destroy trust. And trust is the most valuable asset Ukraine has with its international partners.">Solche Erlebnisse zerstören Vertrauen. Und Vertrauen ist das Wertvollste, was die Ukraine gegenüber ihren internationalen Partnern hat.</p>
+    <p data-de="Wir schweigen nicht länger. Und wir hoffen, dass wir nicht die Einzigen sind." data-en="We will no longer remain silent. And we hope we are not the only ones.">Wir schweigen nicht länger. Und wir hoffen, dass wir nicht die Einzigen sind.</p>
   </article>
-  <div id="view-count-wrap">Besucherzähler: <span id="view-count">0</span></div>
+  <div id="view-count-wrap"><span data-de="Besucherzähler:" data-en="Visitor count:">Besucherzähler:</span> <span id="view-count">0</span></div>
   <section id="comments">
-    <h2>Kommentare</h2>
+    <h2 data-de="Kommentare" data-en="Comments">Kommentare</h2>
     <script src="https://utteranc.es/client.js"
             repo="stylex89/stylex89.github.io"
             issue-term="pathname"
@@ -56,10 +63,25 @@
     </script>
   </section>
   <script>
+    const setLang=(lang)=>{
+      document.documentElement.lang=lang; const isEN=lang==='en';
+      for(const el of document.querySelectorAll('[data-en]')){
+        el.innerHTML=isEN?el.getAttribute('data-en'):el.getAttribute('data-de');
+      }
+      document.getElementById('btnDE').classList.toggle('active',!isEN);
+      document.getElementById('btnEN').classList.toggle('active',isEN);
+      document.getElementById('btnDE').setAttribute('aria-pressed',(!isEN).toString());
+      document.getElementById('btnEN').setAttribute('aria-pressed',isEN.toString());
+      localStorage.setItem('umgLang',lang);
+    };
+    document.getElementById('btnDE').addEventListener('click',()=>setLang('de'));
+    document.getElementById('btnEN').addEventListener('click',()=>setLang('en'));
+    setLang(localStorage.getItem('umgLang')||'de');
+
     fetch('https://api.countapi.xyz/hit/stylex89.github.io/grenzpost')
-      .then(res => res.json())
-      .then(res => {
-        document.getElementById('view-count').textContent = res.value;
+      .then(res=>res.json())
+      .then(res=>{
+        document.getElementById('view-count').textContent=res.value;
       });
   </script>
 </body>
