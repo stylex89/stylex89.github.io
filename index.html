@@ -3,200 +3,347 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Philipp Kirr – Professionelles Profil</title>
-  <meta name="description" content="Philipp Kirr – Produktion & Prozesse (Food & Beverage), Teamführung, Qualität, Lean/OEE, IT‑Support und Energieberatung (PV/WP). Deutsch & Englisch fließend. Verfügbar ab 30.11.2025." />
-  <meta property="og:title" content="Philipp Kirr – Profil & Kontakt" />
-  <meta property="og:description" content="10+ Jahre Industrie (Coca‑Cola, Mars, Intersnack). Teamleitung, Prozesse, Qualität, IT‑Support; Energieberatung (PV/WP). Verfügbar ab 30.11.2025." />
+  <title>Energy Grit Consulting | Wärmepumpen-Beratung & Fördermittel</title>
+  <meta name="description" content="Energy Grit Consulting begleitet Sie von der Wärmepumpen-Planung bis zur Förderung: Vor-Ort-Analyse, Wirtschaftlichkeit, Fördercheck und Umsetzungsbegleitung." />
+  <meta property="og:title" content="Energy Grit Consulting" />
+  <meta property="og:description" content="Beratung für Wärmepumpen, Förderungen und effiziente Heizlösungen für Eigentümer in Deutschland." />
   <meta property="og:type" content="website" />
   <meta property="og:image" content="DSC_1961x.jpg" />
-  <meta name="theme-color" content="#0ea5e9" />
+  <meta name="theme-color" content="#0f766e" />
   <style>
-    :root{
-      --bg:#0b1020; --panel:#0f172a; --muted:#94a3b8; --text:#e5edf7;
-      --accent:#22d3ee; --accent-2:#38bdf8; --success:#34d399; --chip:#132238; --ring: rgba(56,189,248,.35);
+    :root {
+      --bg: #062a27;
+      --bg-soft: #0d3c38;
+      --card: #123f3a;
+      --text: #f3fbfa;
+      --muted: #c4e5e2;
+      --brand: #2dd4bf;
+      --brand-strong: #14b8a6;
+      --line: rgba(255, 255, 255, 0.14);
+      --shadow: 0 20px 55px -30px rgba(0, 0, 0, 0.55);
     }
-    *{box-sizing:border-box}
-    html,body{margin:0;height:100%;background:radial-gradient(1100px 700px at 10% -10%,rgba(56,189,248,.20),transparent),
-                               radial-gradient(900px 600px at 110% -30%,rgba(34,211,238,.12),transparent),var(--bg);
-               color:var(--text);font:500 16px/1.6 "Inter",system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Arial,sans-serif;scroll-behavior:smooth}
-    a{color:var(--accent);text-decoration:none}
-    .container{max-width:1040px;margin:0 auto;padding:24px;position:relative}
-    .glow{position:absolute;inset:-200px -140px auto auto;pointer-events:none;filter:blur(50px);opacity:.3;
-          background:conic-gradient(from 180deg at 50% 50%, rgba(34,211,238,.35), transparent 45%, rgba(56,189,248,.4), transparent 70%, rgba(34,211,238,.35));
-          width:520px;height:520px;border-radius:50%;animation:slowspin 22s linear infinite}
-    @keyframes slowspin{to{transform:rotate(360deg)}}
 
-    header{display:flex;flex-wrap:wrap;gap:24px;align-items:center;margin:28px 0 36px;position:relative}
-    .langswitch{position:absolute;right:0;top:-8px;display:flex;gap:8px}
-    .langswitch button{background:transparent;border:1px solid #1e293b;color:var(--text);padding:6px 12px;border-radius:999px;cursor:pointer;font-weight:700;letter-spacing:.4px}
-    .langswitch button.active{background:linear-gradient(135deg,var(--accent),var(--accent-2));color:#06121f;box-shadow:0 8px 30px -12px var(--ring)}
+    * { box-sizing: border-box; }
 
-    .avatar-wrap{position:relative;flex-shrink:0}
-    .avatar-wrap:before{content:"";position:absolute;inset:-6px;z-index:0;border-radius:26px;filter:blur(6px);
-      background:conic-gradient(from 0deg, var(--accent), var(--accent-2), var(--success), var(--accent));animation:huerotate 8s linear infinite}
-    @keyframes huerotate{to{filter:hue-rotate(360deg) blur(6px)}}
-    .avatar{position:relative;z-index:1;width:128px;height:128px;border-radius:24px;background:#111 center/cover no-repeat url('DSC_1961x.jpg');
-            box-shadow:0 0 0 6px rgba(56,189,248,.12), 0 18px 46px -14px rgba(2,132,199,.55);animation:float 6s ease-in-out infinite}
-    @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
+    html,
+    body {
+      margin: 0;
+      background: radial-gradient(circle at 8% 8%, rgba(45, 212, 191, 0.25), transparent 36%),
+        radial-gradient(circle at 92% -8%, rgba(20, 184, 166, 0.22), transparent 32%),
+        var(--bg);
+      color: var(--text);
+      font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      line-height: 1.6;
+    }
 
-    .title h1{margin:0;font-size:clamp(30px,5vw,44px);font-weight:800;letter-spacing:.2px}
-    .title p{margin:6px 0 0;color:var(--muted);font-size:18px}
-    .chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
-    .chip{background:linear-gradient(180deg,var(--chip),#0c1426);color:#cbd5e1;padding:6px 12px;border:1px solid #0b1a2e;border-radius:999px;font-size:13px}
-    .chip-available{background:linear-gradient(180deg,rgba(52,211,153,.15),rgba(15,118,110,.22));border-color:rgba(16,185,129,.45);color:#c7f9e5}
+    a { color: inherit; }
 
-    .cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:16px}
-    .btn{border:none;border-radius:12px;padding:12px 16px;font-weight:700;cursor:pointer;transition:transform .15s ease, box-shadow .15s ease}
-    .btn-primary{background:linear-gradient(135deg,var(--accent),var(--accent-2));color:#06121f;box-shadow:0 12px 32px -12px var(--ring)}
-    .btn-primary:hover{transform:translateY(-2px)}
-    .btn-ghost{background:transparent;border:1px solid #1e293b;color:var(--text)}
+    .container {
+      width: min(1100px, 92vw);
+      margin: 0 auto;
+    }
 
-    .grid{display:grid;gap:18px}
-    @media(min-width:860px){.grid{grid-template-columns:1.1fr .9fr}}
-    section{background:linear-gradient(180deg,rgba(148,163,184,.08),transparent);border:1px solid rgba(148,163,184,.10);
-            border-radius:16px;padding:20px;margin:10px 0;backdrop-filter:saturate(1.1) blur(2px);transform:translateY(6px);opacity:0}
-    section.reveal{transform:translateY(0);opacity:1;transition:opacity .6s ease, transform .6s ease}
-    h2{margin:0 0 8px;font-size:22px}
-    ul{margin:10px 0 0;padding-left:18px}
-    .list>li{margin-bottom:8px}
-    .timeline{position:relative;padding-left:22px}
-    .timeline:before{content:"";position:absolute;left:8px;top:0;bottom:0;width:2px;background:linear-gradient(var(--accent),transparent)}
-    .tl-item{position:relative;margin-bottom:14px}
-    .tl-item:before{content:"";position:absolute;left:-18px;top:6px;width:10px;height:10px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 4px rgba(34,211,238,.18)}
+    .hero {
+      padding: 56px 0 30px;
+      display: grid;
+      gap: 24px;
+      align-items: center;
+    }
 
-    .kpi{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin-top:8px}
-    .kpi>div{background:rgba(2,6,23,.5);border:1px solid rgba(148,163,184,.12);border-radius:14px;padding:10px;text-align:center}
-    .kpi strong{display:block;font-size:22px}
-    footer{color:var(--muted);text-align:center;margin:30px 0}
-    .small{font-size:14px;color:var(--muted)}
+    @media (min-width: 850px) {
+      .hero {
+        grid-template-columns: 1.15fr 0.85fr;
+        gap: 40px;
+      }
+    }
 
-    @media (prefers-reduced-motion: reduce){
-      .glow,.avatar{animation:none}
-      section{transition:none}
+    .badge {
+      display: inline-block;
+      border: 1px solid rgba(45, 212, 191, 0.55);
+      color: #d6fffa;
+      background: rgba(20, 184, 166, 0.18);
+      border-radius: 999px;
+      padding: 6px 14px;
+      font-size: 14px;
+      font-weight: 650;
+      letter-spacing: 0.2px;
+      margin-bottom: 14px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(34px, 6vw, 56px);
+      line-height: 1.08;
+      letter-spacing: -0.6px;
+    }
+
+    .lead {
+      color: var(--muted);
+      margin: 16px 0 0;
+      font-size: clamp(17px, 2vw, 20px);
+      max-width: 62ch;
+    }
+
+    .cta-row {
+      margin-top: 24px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 12px;
+      padding: 12px 16px;
+      text-decoration: none;
+      font-weight: 700;
+      transition: transform 0.15s ease;
+    }
+
+    .btn:hover { transform: translateY(-2px); }
+
+    .btn-primary {
+      background: linear-gradient(135deg, var(--brand), var(--brand-strong));
+      color: #022825;
+    }
+
+    .btn-secondary {
+      border: 1px solid var(--line);
+      color: var(--text);
+      background: rgba(255, 255, 255, 0.03);
+    }
+
+    .portrait-wrap {
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.02));
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      padding: 16px;
+      box-shadow: var(--shadow);
+    }
+
+    .portrait {
+      width: 100%;
+      aspect-ratio: 3 / 4;
+      object-fit: cover;
+      border-radius: 15px;
+      display: block;
+    }
+
+    .portrait-label {
+      margin: 10px 4px 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .section {
+      margin-top: 26px;
+      border: 1px solid var(--line);
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.045), rgba(255, 255, 255, 0.015));
+      border-radius: 18px;
+      padding: 24px;
+    }
+
+    .section h2 {
+      margin-top: 0;
+      margin-bottom: 14px;
+      font-size: clamp(24px, 3vw, 32px);
+    }
+
+    .cards {
+      display: grid;
+      gap: 14px;
+      margin-top: 8px;
+    }
+
+    @media (min-width: 760px) {
+      .cards { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    }
+
+    .card {
+      background: rgba(0, 0, 0, 0.16);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 16px;
+    }
+
+    .card h3 {
+      margin: 0 0 8px;
+      font-size: 19px;
+    }
+
+    ul { padding-left: 18px; margin: 10px 0 0; }
+    li + li { margin-top: 8px; }
+
+    .steps {
+      counter-reset: step;
+      list-style: none;
+      padding-left: 0;
+      margin: 0;
+    }
+
+    .steps li {
+      position: relative;
+      padding-left: 50px;
+      margin: 0;
+      min-height: 38px;
+    }
+
+    .steps li + li { margin-top: 14px; }
+
+    .steps li::before {
+      counter-increment: step;
+      content: counter(step);
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      background: linear-gradient(135deg, var(--brand), var(--brand-strong));
+      color: #073431;
+      font-weight: 800;
+      box-shadow: var(--shadow);
+    }
+
+    .faq p {
+      margin: 0;
+      color: var(--muted);
+    }
+
+    .faq-item + .faq-item {
+      margin-top: 16px;
+      padding-top: 14px;
+      border-top: 1px dashed rgba(255, 255, 255, 0.22);
+    }
+
+    .contact-grid {
+      display: grid;
+      gap: 14px;
+      margin-top: 10px;
+    }
+
+    @media (min-width: 760px) {
+      .contact-grid { grid-template-columns: 1fr 1fr; }
+    }
+
+    .contact-box {
+      background: rgba(0, 0, 0, 0.16);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 16px;
+    }
+
+    footer {
+      text-align: center;
+      color: var(--muted);
+      font-size: 14px;
+      padding: 28px 0 32px;
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <div class="glow" aria-hidden="true"></div>
-    <header>
-      <div class="langswitch" aria-label="Language switch">
-        <button id="btnDE" class="active" aria-pressed="true">DE</button>
-        <button id="btnEN" aria-pressed="false">EN</button>
-      </div>
-      <div class="avatar-wrap"><div class="avatar" aria-label="Profilfoto von Philipp Kirr"></div></div>
-      <div class="title">
-        <h1>Philipp Kirr</h1>
-        <p data-de="Produktion & Prozesse · Teamführung · Qualität · Lean/OEE · IT‑Support · Energieberatung (PV/WP)"
-           data-en="Production & Processes · Team Leadership · Quality · Lean/OEE · IT Support · Energy Advisory (PV/HP)">
-          Produktion & Prozesse · Teamführung · Qualität · Lean/OEE · IT‑Support · Energieberatung (PV/WP)
+    <header class="hero">
+      <div>
+        <span class="badge">Energy Grit Consulting</span>
+        <h1>Wärmepumpen-Beratung mit klarem Förder-Fokus</h1>
+        <p class="lead">
+          Ich begleite Hausbesitzer und Unternehmen von der ersten Analyse bis zur umsetzbaren Entscheidung.
+          Verständlich, unabhängig und praxisnah: Technik, Wirtschaftlichkeit und Fördermittel aus einer Hand.
         </p>
-        <div class="chips">
-          <span class="chip" data-de="Düsseldorf · Krefeld · Mönchengladbach" data-en="Düsseldorf · Krefeld · Mönchengladbach">Düsseldorf · Krefeld · Mönchengladbach</span>
-          <span class="chip" data-de="10+ Jahre Industrie" data-en="10+ years in industry">10+ Jahre Industrie</span>
-          <span class="chip" data-de="Coca‑Cola · Mars · Intersnack" data-en="Coca‑Cola · Mars · Intersnack">Coca‑Cola · Mars · Intersnack</span>
-          <span class="chip" data-de="Deutsch & Englisch fließend" data-en="German & English fluent">Deutsch & Englisch fließend</span>
-          <span class="chip chip-available" data-de="Verfügbar ab 30.11.2025" data-en="Available from 30 Nov 2025">Verfügbar ab 30.11.2025</span>
-        </div>
-        <div class="cta">
-          <a class="btn btn-primary" href="mailto:philipp.kirr@gmail.com" data-de="Kontakt per E‑Mail" data-en="Contact via Email">Kontakt per E‑Mail</a>
-          <a class="btn btn-ghost" href="https://www.linkedin.com/in/philipp-kirr-579274163" target="_blank" rel="noopener" data-de="LinkedIn Profil" data-en="LinkedIn Profile">LinkedIn Profil</a>
-          <a class="btn btn-ghost" href="cv/Philipp_Kirr_CV.pdf" target="_blank" rel="noopener" data-de="Lebenslauf (PDF)" data-en="Resume (PDF)">Lebenslauf (PDF)</a>
-          <a class="btn btn-ghost" href="ukraine-moldawien-grenze.html" data-de="Blog" data-en="Blog">Blog</a>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="#kontakt">Kostenloses Erstgespräch</a>
+          <a class="btn btn-secondary" href="#leistungen">Leistungen ansehen</a>
         </div>
       </div>
+      <aside class="portrait-wrap">
+        <img class="portrait" src="DSC_1961x.jpg" alt="Berater von Energy Grit Consulting" />
+        <p class="portrait-label">Ihr Ansprechpartner bei Energy Grit Consulting</p>
+      </aside>
     </header>
 
-    <div class="grid">
-      <section aria-labelledby="about">
-        <h2 id="about" data-de="Über mich" data-en="About me">Über mich</h2>
-        <p id="aboutText" data-de="Erfahrener Facharbeiter und Teamplayer mit über zehn Jahren Praxis in der Lebensmittel‑ und Getränkeindustrie (Coca‑Cola, Mars, Intersnack). Stärken: Linienbetreuung, Qualitätssicherung, Prozess‑ & OEE‑Optimierung, Ursachenanalyse sowie sichere Maschinenführung. Zusätzliche Erfahrung im Vertrieb erneuerbarer Energien (Photovoltaik/Wärmepumpen) und IT‑Support (Google IT Support Certificate). Mehrsprachig (DE/EN, Grundkenntnisse ES/PT/RO). Offen für Kooperationen und Festanstellungen im Raum Düsseldorf."
-           data-en="Experienced operator and team lead with 10+ years in the food & beverage industry (Coca‑Cola, Mars, Intersnack). Strengths: line operations, quality assurance, process & OEE optimisation, root‑cause analysis and safe machine operation. Additional experience in renewable energy sales (PV/heat pumps) and IT support (Google IT Support Certificate). Multilingual (DE/EN, basic ES/PT/RO). Open to collaborations and full‑time roles in the Düsseldorf area.">
-          Erfahrener Facharbeiter und Teamplayer mit über zehn Jahren Praxis in der Lebensmittel‑ und Getränkeindustrie (Coca‑Cola, Mars, Intersnack). Stärken: Linienbetreuung, Qualitätssicherung, Prozess‑ & OEE‑Optimierung, Ursachenanalyse sowie sichere Maschinenführung. Zusätzliche Erfahrung im Vertrieb erneuerbarer Energien (Photovoltaik/Wärmepumpen) und IT‑Support (Google IT Support Certificate). Mehrsprachig (DE/EN, Grundkenntnisse ES/PT/RO). Offen für Kooperationen und Festanstellungen im Raum Düsseldorf.
-        </p>
-        <div class="kpi">
-          <div><strong data-de="10+" data-en="10+">10+</strong><span data-de="Jahre Erfahrung" data-en="years experience">Jahre Erfahrung</span></div>
-          <div><strong data-de="3" data-en="3">3</strong><span data-de="Top‑Marken" data-en="top brands">Top‑Marken</span></div>
-          <div><strong data-de="2" data-en="2">2</strong><span data-de="Zertifikate (IT & Lean)" data-en="certificates (IT & Lean)">Zertifikate (IT & Lean)</span></div>
+    <section class="section" id="leistungen">
+      <h2>Leistungen für Wärmepumpen & Förderungen</h2>
+      <div class="cards">
+        <article class="card">
+          <h3>Technische Vorprüfung</h3>
+          <ul>
+            <li>Bestandsaufnahme von Gebäude, Heizsystem und Verbrauch</li>
+            <li>Einschätzung der Eignung für Luft-/Sole-Wärmepumpen</li>
+            <li>Hinweise zu Hydraulik, Schall und Aufstellort</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Wirtschaftlichkeit</h3>
+          <ul>
+            <li>Vergleich Bestandssystem vs. Wärmepumpenlösung</li>
+            <li>Kostenrahmen inkl. Betriebskosten-Prognose</li>
+            <li>Empfehlungen für sinnvolle Sanierungsschritte</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Fördermittel-Check</h3>
+          <ul>
+            <li>Prüfung möglicher BAFA/KfW-Förderungen</li>
+            <li>Unterstützung bei Unterlagen und Abläufen</li>
+            <li>Typische Fehler vermeiden – Zuschüsse sichern</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="ablauf">
+      <h2>So läuft die Beratung ab</h2>
+      <ol class="steps">
+        <li><strong>Erstgespräch:</strong> Ziele, Budget und Zeitrahmen klären.</li>
+        <li><strong>Analyse:</strong> Gebäudedaten, bestehende Technik und Verbrauch auswerten.</li>
+        <li><strong>Beratungsbericht:</strong> Konkrete Optionen mit Priorisierung und Förderchancen.</li>
+        <li><strong>Umsetzung:</strong> Begleitung bei Fachpartnern, Angeboten und nächsten Schritten.</li>
+      </ol>
+    </section>
+
+    <section class="section faq" id="foerderung">
+      <h2>Häufige Fragen zu Förderungen</h2>
+      <div class="faq-item">
+        <h3>Welche Förderungen sind für Wärmepumpen relevant?</h3>
+        <p>Je nach Objekt und Ausgangssituation kommen Zuschüsse und Kredite in Frage. Ich prüfe die passenden Programme strukturiert für Ihren Fall.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Wann sollte der Antrag gestellt werden?</h3>
+        <p>In der Regel immer vor Beauftragung. Eine frühzeitige Prüfung verhindert, dass Förderansprüche verloren gehen.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Lohnt sich eine Wärmepumpe im Altbau?</h3>
+        <p>Oft ja – wenn Planung und Systemauslegung stimmen. Entscheidend sind Heizlast, Vorlauftemperatur und sinnvolle Begleitmaßnahmen.</p>
+      </div>
+    </section>
+
+    <section class="section" id="kontakt">
+      <h2>Kontakt</h2>
+      <p class="lead">Sie möchten wissen, ob eine Wärmepumpe bei Ihnen sinnvoll ist? Schreiben Sie mir – ich melde mich zeitnah zurück.</p>
+      <div class="contact-grid">
+        <div class="contact-box">
+          <strong>E-Mail</strong>
+          <p><a href="mailto:beratung@energy-grit.de">beratung@energy-grit.de</a></p>
         </div>
-      </section>
-
-      <section aria-labelledby="value">
-        <h2 id="value" data-de="Schwerpunkte & Mehrwert" data-en="Focus & Value">Schwerpunkte & Mehrwert</h2>
-        <ul class="list" id="valueList">
-          <li data-de="Linienführung & Qualität: Überwachung, Hygienestandards, QS‑Prüfungen, Dokumentation"
-              data-en="Line ops & quality: supervision, hygiene standards, QA checks, documentation">Linienführung & Qualität: Überwachung, Hygienestandards, QS‑Prüfungen, Dokumentation</li>
-          <li data-de="Prozessoptimierung: OEE, 5S, Ursachenanalysen, Stillstandsreduktion"
-              data-en="Process optimisation: OEE, 5S, root‑cause analysis, downtime reduction">Prozessoptimierung: OEE, 5S, Ursachenanalysen, Stillstandsreduktion</li>
-          <li data-de="Team & Sicherheit: Schichtkoordination, Coaching, Arbeitssicherheit (BGN)"
-              data-en="Team & safety: shift coordination, coaching, HSE (BGN)">Team & Sicherheit: Schichtkoordination, Coaching, Arbeitssicherheit (BGN)</li>
-          <li data-de="IT‑Support & Technik: Hardware/Software‑Hilfe, Basis‑Netzwerke, Mess‑ & Laborkompetenz"
-              data-en="IT support & tech: hardware/software help, basic networking, test & lab skills">IT‑Support & Technik: Hardware/Software‑Hilfe, Basis‑Netzwerke, Mess‑ & Laborkompetenz</li>
-          <li data-de="Energieberatung: PV/Wärmepumpe – kundennah, lösungsorientiert"
-              data-en="Energy advisory: PV/heat pump – client‑focused, solution‑oriented">Energieberatung: PV/Wärmepumpe – kundennah, lösungsorientiert</li>
-        </ul>
-      </section>
-
-      <section aria-labelledby="skills">
-        <h2 id="skills" data-de="Skills" data-en="Skills">Skills</h2>
-        <ul class="list" id="skillsList">
-          <li data-de="Qualitätssicherung · HACCP · SPC" data-en="Quality assurance · HACCP · SPC">Qualitätssicherung · HACCP · SPC</li>
-          <li data-de="Lean & OEE · 5S · Standard‑Work" data-en="Lean & OEE · 5S · standard work">Lean & OEE · 5S · Standard‑Work</li>
-          <li data-de="Störungsanalyse · Troubleshooting" data-en="Fault analysis · troubleshooting">Störungsanalyse · Troubleshooting</li>
-          <li data-de="IT‑Support (Google Certificate)" data-en="IT support (Google certificate)">IT‑Support (Google Certificate)</li>
-          <li data-de="Mehrsprachige Kommunikation (DE/EN/ES/PT/RO)" data-en="Multilingual communication (DE/EN/ES/PT/RO)">Mehrsprachige Kommunikation (DE/EN/ES/PT/RO)</li>
-        </ul>
-      </section>
-
-      <section aria-labelledby="experience">
-        <h2 id="experience" data-de="Erfahrung" data-en="Experience">Erfahrung</h2>
-        <div class="timeline">
-          <div class="tl-item" data-de="12/2024 – 11/2025 · Coca‑Cola Europacific Partners · Produktionsmitarbeiter – Überwachung, QS, kleinere Wartungen, Ursachenanalyse" data-en="12/2024 – 11/2025 · Coca‑Cola Europacific Partners · production operator – supervision, QA, minor maintenance, root‑cause analysis"><strong>12/2024 – 11/2025</strong> · <b>Coca‑Cola Europacific Partners</b> – Produktionsmitarbeiter</div>
-          <div class="tl-item" data-de="06/2023 – 11/2024 · Mars · Operator Verpackung – Maschinenführung, Wartung, sensorische QS" data-en="06/2023 – 11/2024 · Mars · packaging operator – machine operation, maintenance, sensory QA"><strong>06/2023 – 11/2024</strong> · <b>Mars</b> – Operator Verpackung</div>
-          <div class="tl-item" data-de="10/2023 – heute · AIC Europe GmbH · Labortätigkeit – Testreihen an Kondensatoren, Kalibrierung, Lean‑Verbesserungen" data-en="10/2023 – present · AIC Europe GmbH · lab assistant – capacitor testing, calibration, lean improvements"><strong>10/2023 – heute</strong> · <b>AIC Europe GmbH</b> – Labortätigkeit (Nebentätig)</div>
-          <div class="tl-item" data-de="09/2019 – 06/2023 · Intersnack · Team‑Captain Verpackung & Sicherheitsbeauftragter – Teamleitung (12 MA), Audits, HSE" data-en="09/2019 – 06/2023 · Intersnack · team captain packaging & safety officer – lead of 12, audits, HSE"><strong>09/2019 – 06/2023</strong> · <b>Intersnack</b> – Team‑Captain Verpackung & Sicherheitsbeauftragter</div>
-          <div class="tl-item" data-de="08/2016 – 09/2019 · Intersnack · Maschinen‑ & Anlagenführer – Bedienung, Störungen, Kennzahlen" data-en="08/2016 – 09/2019 · Intersnack · machine & plant operator – operation, faults, KPIs"><strong>08/2016 – 09/2019</strong> · <b>Intersnack</b> – Maschinen‑ & Anlagenführer</div>
-          <div class="tl-item" data-de="07/2013 – 06/2016 · Deutsche Edelstahlwerke · Schmelzer – Ofenbetrieb, Prozess‑/Qualitätskontrolle" data-en="07/2013 – 06/2016 · Deutsche Edelstahlwerke · melter – furnace operation, process/quality control"><strong>07/2013 – 06/2016</strong> · <b>Deutsche Edelstahlwerke</b> – Schmelzer</div>
-          <div class="tl-item" data-de="Seit 01/2025 · Selbstständig · Energievertrieb (PV/WP) – Planung, Beratung, Förderung" data-en="Since 01/2025 · self‑employed · energy sales (PV/HP) – planning, advisory, subsidies"><strong>Seit 01/2025</strong> · <b>Selbstständig</b> – Energievertrieb (PV/WP)</div>
+        <div class="contact-box">
+          <strong>Telefon</strong>
+          <p><a href="tel:+4915112345678">+49 151 12345678</a></p>
         </div>
-      </section>
-
-      <section aria-labelledby="contact">
-        <h2 id="contact" data-de="Kontakt" data-en="Contact">Kontakt</h2>
-        <p class="small" id="contactLead" data-de="Am besten per E‑Mail oder über LinkedIn. Ich stehe ab dem <b>30.11.2025</b> für neue Aufgaben zur Verfügung." data-en="Best via email or LinkedIn. I am available for new opportunities from <b>30 Nov 2025</b>.">Am besten per E‑Mail oder über LinkedIn. Ich stehe ab dem <b>30.11.2025</b> für neue Aufgaben zur Verfügung.</p>
-        <ul>
-          <li>E‑Mail: <a href="mailto:philipp.kirr@gmail.com">philipp.kirr@gmail.com</a></li>
-          <li>LinkedIn: <a href="https://www.linkedin.com/in/philipp-kirr-579274163" target="_blank" rel="noopener">linkedin.com/in/philipp-kirr-579274163</a></li>
-        </ul>
-      </section>
-    </div>
+      </div>
+    </section>
 
     <footer>
-      <p class="small">© <span id="y"></span> Philipp Kirr · <span data-de="Professionelles Profil" data-en="Professional profile">Professionelles Profil</span> · Hosted via GitHub Pages</p>
+      © <span id="year"></span> Energy Grit Consulting · Beratung für Wärmepumpen & Fördermittel
     </footer>
   </div>
-  <script>
-    // Jahr
-    document.getElementById('y').textContent=new Date().getFullYear();
-    // Sprache
-    const setLang=(lang)=>{
-      document.documentElement.lang=lang; const isEN=lang==='en';
-      for(const el of document.querySelectorAll('[data-en]')){ el.innerHTML=isEN?el.getAttribute('data-en'):el.getAttribute('data-de'); }
-      document.getElementById('btnDE').classList.toggle('active',!isEN);
-      document.getElementById('btnEN').classList.toggle('active',isEN);
-      document.getElementById('btnDE').setAttribute('aria-pressed',(!isEN).toString());
-      document.getElementById('btnEN').setAttribute('aria-pressed',isEN.toString());
-      localStorage.setItem('pgLang',lang);
-    };
-    document.getElementById('btnDE').addEventListener('click',()=>setLang('de'));
-    document.getElementById('btnEN').addEventListener('click',()=>setLang('en'));
-    setLang(localStorage.getItem('pgLang')||'de');
 
-    // Scroll-Reveal Effekt
-    const observer=new IntersectionObserver((entries)=>{
-      for(const e of entries){ if(e.isIntersecting){ e.target.classList.add('reveal'); observer.unobserve(e.target);} }
-    },{threshold:.12});
-    for(const sec of document.querySelectorAll('section')) observer.observe(sec);
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
   </script>
 </body>
 </html>
